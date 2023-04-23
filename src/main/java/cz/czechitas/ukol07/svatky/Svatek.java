@@ -1,9 +1,16 @@
 package cz.czechitas.ukol07.svatky;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+import java.awt.*;
+import java.io.IOException;
+import java.nio.file.Path;
 import java.time.MonthDay;
 
 public class Svatek {
+    private final ObjectMapper objectMapper = new ObjectMapper();
     //TODO implementovat properties pro "den" typu MonthDay a "jmeno" typu String.
+
 
     private MonthDay den;
     private String jmeno;
@@ -23,4 +30,6 @@ public class Svatek {
     public void setJmeno(String jmeno) {
         this.jmeno = jmeno;
     }
+
+
 }
