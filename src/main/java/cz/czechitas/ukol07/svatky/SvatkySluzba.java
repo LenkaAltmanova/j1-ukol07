@@ -35,18 +35,9 @@ public class SvatkySluzba {
         return seznamSvatku
                 .getSvatky()
                 .stream()
-                .filter(s -> day.equals(s.getDen()))
+                .filter(svatek -> day.equals(svatek.getDen()))
                 .map(svatek -> svatek.getJmeno())
                 .collect(Collectors.toList());
 
-        // TODO
-        // získat seznam svátků
-        // převést na Stream
-        // pomocí metody filter() vybrat jen ty, které odpovídají zadanému dni (porovnat MonthDay pomocí metodyequals())
-        // pomocí metody map() získat z objektu jméno
-        // pomocí toList() převést na List
-
-        // Následující řádek po vlastní implementaci smažete.
-        //return List.of();
     }
 }
