@@ -32,9 +32,7 @@ public class SvatkySluzba {
     }
 
     public List<String> vyhledatSvatkyKeDni(MonthDay day) {
-        return seznamSvatku
-                .getSvatky()
-                .stream()
+        return seznamSvatku.getSvatky().stream()
                 .filter(svatek -> day.equals(svatek.getDen()))
                 .map(svatek -> svatek.getJmeno())
                 .collect(Collectors.toList());

@@ -9,7 +9,6 @@ import java.time.MonthDay;
 
 public class Svatek {
     private final ObjectMapper objectMapper = new ObjectMapper();
-    //TODO implementovat properties pro "den" typu MonthDay a "jmeno" typu String.
 
 
     private MonthDay den;
